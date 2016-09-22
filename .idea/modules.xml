@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ChatDemo/ChatDemo.iml" filepath="$PROJECT_DIR$/ChatDemo/ChatDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day2/Day2.iml" filepath="$PROJECT_DIR$/Day2/Day2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day5/Day5.iml" filepath="$PROJECT_DIR$/Day5/Day5.iml" />
       <module fileurl="file://$PROJECT_DIR$/EncodeText/EncodeText.iml" filepath="$PROJECT_DIR$/EncodeText/EncodeText.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileJoiner/FileJoiner.iml" filepath="$PROJECT_DIR$/FileJoiner/FileJoiner.iml" />
       <module fileurl="file://$PROJECT_DIR$/FileSplitter/FileSplitter.iml" filepath="$PROJECT_DIR$/FileSplitter/FileSplitter.iml" />
       <module fileurl="file://$PROJECT_DIR$/JC4.iml" filepath="$PROJECT_DIR$/JC4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Network/Network.iml" filepath="$PROJECT_DIR$/Network/Network.iml" />
     </modules>
   </component>
 </project>

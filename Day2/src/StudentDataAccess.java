@@ -34,29 +34,25 @@ public class StudentDataAccess {
     }
 
     public static ArrayList<Student> readFromTextFile(String path) throws IOException {
-        BufferedReader bufferedReader = null;
-        ArrayList<Student> studentArrayList = new ArrayList<>();
-        try {
-            bufferedReader = new BufferedReader(new FileReader("sinhvienText.txt"));
-        } catch (FileNotFoundException e) {
-            System.out.println("File không tồn tại!");
-            e.printStackTrace();
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(path))) {
+            ArrayList<Student> studentArrayList = new ArrayList<Student>();
+
+            while (bufferedReader.ready()) {
+
+                String strStudent = bufferedReader.readLine();
+                String strArray[] = new String[3];
+                strArray = strStudent.split(";");
+
+                String name = strArray[0];
+                int age = Integer.parseInt(strArray[1]);
+                String studentId = strArray[2];
+
+                Student student = new Student(name, age, studentId);
+
+
+                studentArrayList.add(student);
+            }
+            return studentArrayList;
         }
-        while (bufferedReader.ready()) {
-
-            String strStudent = bufferedReader.readLine();
-            String strArray[] = new String[3];
-            strArray = strStudent.split(";");
-
-            String name=strArray[0];
-            int age=Integer.parseInt(strArray[1]);
-            String studentId=strArray[2];
-
-            Student student = new Student(name,age,studentId);
-
-
-            studentArrayList.add(student);
-        }
-        return studentArrayList;
     }
 }
