@@ -17,11 +17,11 @@ public class Server {
         while (true) {
             final Socket socket = serverSocket.accept();
             socketArrayList.add(socket);
-            String date=(new Date()).toString();
+            String date = (new Date()).toString();
             for (Socket socket1 : socketArrayList) {
-                BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(socket1.getInputStream()));
-                BufferedWriter bufferedWriter=new BufferedWriter(new OutputStreamWriter(socket1.getOutputStream()));
-                bufferedWriter.write("chào mừng bạn "+socket.getLocalAddress().getHostName()+" gia nhập lúc "+date);
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket1.getInputStream()));
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket1.getOutputStream()));
+                bufferedWriter.write("chào mừng bạn " + socket.getLocalAddress().getHostName() + " gia nhập lúc " + date);
                 bufferedWriter.newLine();
                 bufferedWriter.flush();
             }
