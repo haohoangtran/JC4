@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/FileSplitter/FileSplitter.iml" filepath="$PROJECT_DIR$/FileSplitter/FileSplitter.iml" />
       <module fileurl="file://$PROJECT_DIR$/JC4.iml" filepath="$PROJECT_DIR$/JC4.iml" />
       <module fileurl="file://$PROJECT_DIR$/Network/Network.iml" filepath="$PROJECT_DIR$/Network/Network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChatDemo/src.iml" filepath="$PROJECT_DIR$/ChatDemo/src.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChatDemo/sre.iml" filepath="$PROJECT_DIR$/ChatDemo/sre.iml" />
     </modules>
   </component>
 </project>
